@@ -1,3 +1,8 @@
 Explicação Funcionamento Debezium kafka e postgres
 https://www.youtube.com/watch?v=9yP_75OBWis&ab_channel=BIInsightsInc
 https://www.youtube.com/watch?v=xh9rVSqNHMI&ab_channel=BIInsightsInc
+
+Necessita instalar 
+https://dev.to/greenteabiscuit/installing-vim-in-a-docker-container-15i6
+acessar linux ubuntu postresql
+docker exec -it e14e694705d2 sh
