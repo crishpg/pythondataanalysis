@@ -57,3 +57,13 @@ services:
       ZK_HOSTS: "zookeeper:2181"
       APPLICATION_SECRET: "random-secret"
     command: -Dpidfile.path=/dev/null 
+
+    postgres:
+    image: postgres:13
+    restart: always
+    environment:
+      POSTGRES_USER: dba
+      POSTGRES_PASSWORD: password123!#
+      POSTGRES_DB: postgres
+    ports:
+      - "5432:5432"
