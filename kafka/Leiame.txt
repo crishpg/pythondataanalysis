@@ -18,3 +18,21 @@ ALTER ROLE etl WITH SUPERUSER;
 #Pacote kafka python
 pip install kafka-python
 pip install kafka-python-ng
+
+#comandos postgresql
+-- Criação da tabela 'person'
+CREATE TABLE person (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    age INT,
+    email VARCHAR(100) UNIQUE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Inserção de valores fictícios na tabela 'person'
+INSERT INTO person (name, age, email) VALUES
+('Alice Silva', 30, 'alice.silva@example.com'),
+('Bruno Costa', 25, 'bruno.costa@example.com'),
+('Carla Mendes', 28, 'carla.mendes@example.com'),
+('Daniel Oliveira', 35, 'daniel.oliveira@example.com'),
+('Eva Santos', 22, 'eva.santos@example.com');
