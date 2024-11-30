@@ -36,3 +36,16 @@ INSERT INTO person (name, age, email) VALUES
 ('Carla Mendes', 28, 'carla.mendes@example.com'),
 ('Daniel Oliveira', 35, 'daniel.oliveira@example.com'),
 ('Eva Santos', 22, 'eva.santos@example.com');
+valores apos primeiro teste
+INSERT INTO person (name, age, email, created_at) VALUES 
+('Lucas Ferreira', 25, 'lucas.ferreira@example.com', NOW()),
+('Mariana Santos', 34, 'mariana.santos@example.com', NOW()),
+('Thiago Almeida', 29, 'thiago.almeida@example.com', NOW()),
+('Juliana Costa', 42, 'juliana.costa@example.com', NOW()),
+('Ricardo Lima', 31, 'ricardo.lima@example.com', NOW()),
+('Fernanda Rocha', 27, 'fernanda.rocha@example.com', NOW()),
+('Gabriel Oliveira', 38, 'gabriel.oliveira@example.com', NOW()),
+('Ana Paula', 24, 'ana.paula@example.com', NOW()),
+('Carlos Henrique', 36, 'carlos.henrique@example.com', NOW()),
+('Sofia Martins', 30, 'sofia.martins@example.com', NOW());
+
