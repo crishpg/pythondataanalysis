@@ -2,11 +2,11 @@
     "name": "source-productcategory-connector",
     "config": {
         "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
-	"database.hostname": "your-host-ip",
+	"database.hostname": "172.20.0.3",
         "database.port": "5432",
-        "database.user": "user",
-	"database.password": "password",
-        "database.dbname": "AdventureWorks",
+        "database.user": "dba",
+	"database.password": "password123!#",
+        "database.dbname": "Adventureworks",
         "plugin.name": "pgoutput",
         "database.server.name": "source",
         "key.converter.schemas.enable": "false",
@@ -15,7 +15,7 @@
         "transforms.unwrap.type": "io.debezium.transforms.ExtractNewRecordState",
         "value.converter": "org.apache.kafka.connect.json.JsonConverter",
         "key.converter": "org.apache.kafka.connect.json.JsonConverter",
-	"table.include.list": "public.factinternetsales_streaming",
+	"table.include.list": "public.person",
         "slot.name" : "dbz_sales_transaction_slot"
     }
 }
