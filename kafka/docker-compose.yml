@@ -58,7 +58,7 @@ services:
       APPLICATION_SECRET: "random-secret"
     command: -Dpidfile.path=/dev/null 
 
-    postgres:
+  postgres:
     image: postgres:13
     restart: always
     environment:
