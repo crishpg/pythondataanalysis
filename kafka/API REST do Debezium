@@ -1,0 +1,18 @@
+curl -X POST \
+  -H "Content-Type: application/json" \
+  --data '{
+    "name": "sqlserver-connector",
+    "config": {
+      "connector.class": "io.debezium.connector.sqlserver.SqlServerConnector",
+      "tasks.max": "1",
+      "database.hostname": "sqlserver",
+      "database.port": "1433",
+      "database.user": "sa",
+      "database.password": "YourStrong!Passw0rd",
+      "database.dbname": "YourDatabaseName",
+      "database.server.name": "sqlserver-server",
+      "table.whitelist": "dbo.YourTableName",
+      "plugin.name": "sqlserver"
+    }
+  }' \
+  http://localhost:8083/connectors
